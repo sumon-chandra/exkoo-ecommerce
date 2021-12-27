@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/2cfe536c1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./output/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EXKOO | eCommerce</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------------
+                              Navbar Start
+    ----------------------------------------------------- -->
+    <header>
+      <!-- Top Header -->
+     <div class="container-full bg-white">
+      <div class=" mx-auto container-lg flex justify-between items-center">
+        <div class="left-side flex flex-row space-x-2">
+          <p class="text-xs"><i class="far fa-flag"></i> Bangla <i class="fas fa-angle-down hover:bg-black"></i></p>
+          <p class="text-xs"> <span class="font-bold">$</span> Thaka <i class="fas fa-angle-down hover:bg-black"></i></p>
+        </div>
+        <div class="right-side flex flex-row space-x-4">
+           <p class="text-xs"><i class="fas fa-mobile-alt"></i> App</p>
+          <p class="text-xs">Help</p>
+          <p class="text-xs">Start Seller</p>
+          <p class="text-xs">Join Affiliate</p>
+        </div>
+      </div>
+     </div>
+      <div class="flex flex-wrap">
+        <section class="relative container">
+          <!-- navbar -->
+          <nav class="flex flex-col justify-between bg-white text-black w-screen">
+            <div class="container-lg mx-auto w-screen">
+              <div class=" flex w-full justify-between items-center">
+                <a class="text-3xl font-bold font-heading" href="#">
+                  <img class="h-9" src="/img/logo.png" alt="logo" />
+                </a>
+                <!-- Menu Icon -->
+                <div class="mx-7 p-2 rounded-md transition duration-500 ease-in-out hover:bg-gray-200">
+                  <div class="w-6 h-1 my-0.5 rounded-sm bg-gray-700"></div>
+                  <div class="w-8 h-1 my-0.5 rounded-sm bg-gray-700"></div>
+                  <div class="w-10 h-1 my-0.5 rounded-sm bg-gray-700"></div>
+                </div>
+  
+                <!-- Form Section -->
+                <!-- component -->
+  
+                <form class="m-4 form-container h-12 flex">
+                  <input
+                    class="
+                      rounded-l-lg
+                      p-4
+                      border-t
+                      mr-0
+                      border-b border-l
+                      text-gray-800
+                      w-full
+                      bg-white
+                    "
+                    placeholder="What you are looking .."
+                  />
+                  <button
+                    class="
+                      px-10
+                      rounded-lg
+                      text-white
+                      w-48
+                      font-bold
+                      text-lg
+                      bg-pink-600
+                    "
+                  >
+                    <i class="fas fa-search"></i> Search
+                  </button>
+                </form>
+  
+                <!-- Header Icons -->
+                <div class="hidden xl:flex items-center mx-auto space-x-5">
+                  <a class="flex flex-col items-center mx-5 " href="#">
+                    <div class="icon-container">
+                      <i class="fas fa-shopping-cart"></i> 
+                    <span class="badge mb-3 mx-1 bg-pink-600 rounded px-1  text-center object-right-top text-white text-sm mr-1">0</span>
+                    </div>
+                    <p class="text-xs">Compare</p>
+                  </a>
+                  <a class="flex flex-col items-center mx-5 " href="#">
+                    <div class="icon-container">
+                      <i class="fas fa-shopping-cart"></i> 
+                    <span class="badge mb-3 mx-1 bg-pink-600 rounded px-1  text-center object-right-top text-white text-sm mr-1">3</span>
+                    </div>
+                    <p class="text-xs">Compare</p>
+                  </a>
+                  <a class="flex flex-col items-center mx-5 " href="#">
+                    <div class="icon-container">
+                      <i class="fas fa-shopping-cart"></i> 
+                    <span class="badge mb-3 mx-1 bg-pink-600 rounded px-1  text-center object-right-top text-white text-sm mr-1">5</span>
+                    </div>
+                    <p class="text-xs">Compare</p>
+                  </a>
+                  
+                </div>
+                <!-- Sign In / Register      -->
+                <div class="w-0.5 h-6 bg-gray-700 my-auto mx-5"></div>
+                <div class="login-signup">
+                  <button class="bg-pink-100 hover:bg-pink-200 p-3 px-10 rounded-lg transition duration-500 ease-in-out hover:ring-2 ring-offset-2 ">login</button>
+                  <button class="bg-green-100 hover:bg-green-200 p-3 px-8 rounded-lg transition duration-500 ease-in-out hover:ring-2 ring-offset-2 ">Signup</button>
+
+                </div>
+              </div>
+              <!-- Responsive navbar
+              <a class="xl:hidden flex mr-6 items-center" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 hover:text-gray-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="flex absolute -mt-5 ml-4">
+                  <span
+                    class="
+                      animate-ping
+                      absolute
+                      inline-flex
+                      h-3
+                      w-3
+                      rounded-full
+                      bg-pink-400
+                      opacity-75
+                    "
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"
+                  >
+                  </span>
+                </span>
+              </a>
+              <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 hover:text-gray-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </a> -->
+            </div>
+            <!-- Nav Links -->
+           <div class="nav-links">
+            <ul
+            class="
+              hidden
+              md:flex
+              justify-between
+              container-lg 
+              mx-auto
+              
+              font-semibold font-heading
+              
+            "
+          >
+            <li><a class="text-pink-600 text-sm transition duration-500 ease-in-out " href="#">Home</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">Blogs</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">All Categories</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">Women & Clothing</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">Men Clothing Fashion</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">Computer & Accessory</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">Kids & Toy</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600" href="#">Consumer Electronics</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600 font-bold" href="#">Flash Sale</a></li>
+            <li><a class="text-gray-700 text-sm transition duration-500 ease-in-out hover:text-pink-600 font-bold" href="#">All Brands</a></li>
+          </ul>
+           </div>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <!-- ------------------------------------------------
+                              Navbar End
+    ----------------------------------------------------- -->
+  </body>
+</html>
