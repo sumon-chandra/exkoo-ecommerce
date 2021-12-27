@@ -1,12 +1,29 @@
-
-
-
-
-.container-lg{
-    width: 85rem;
+.container-lg {
+  width: 89rem;
 }
 
-
-.form-container{
+.form-container {
+  width: 38rem;
+}
+.header-form{
     width: 38rem;
+    height: 2rem;
 }
+
+
+.banner {
+  background-image: url("./img/Slider04.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all-category {
+  width: 20rem;
+}
+
+.future-today-section {
+  width: 20rem;
+}
+
+
